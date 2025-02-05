@@ -1,0 +1,21 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": false,
+    "nodeVersion": "16.14.0",
+    "sdksVersions": {
+      "@microsoft/microsoft-graph-client": "3.0.2",
+      "@microsoft/teams-js": "2.12.0"
+    },
+    "version": "1.17.4",
+    "libraryName": "kid-details-list",
+    "libraryId": "f1d0dbd8-b2b0-4218-816c-2d1667159d0c",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "kid-details-list",
+    "solutionShortDescription": "kid-details-list description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}

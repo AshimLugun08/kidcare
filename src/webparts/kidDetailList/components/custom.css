@@ -1,0 +1,35 @@
+/* #workbenchPageContent {
+  margin: 0;
+  max-width: none;
+}*/
+
+.ql-toolbar {
+  display: block !important; /* or any other value you want */
+  position: absolute !important;
+  margin-top: 50px !important;
+  animation: none !important;
+  transition: none !important;
+}
+
+.ql-active .ql-toolbar {
+  position: absolute !important;
+  margin-top: 50px !important;
+  animation: none !important;
+  transition: none !important;
+}
+
+/* div#richText_54c64fe3-f2eb-4160-ae8d-ca381f14f075 {
+    margin-top: 55px;
+} */
+
+.quill {
+  margin-top: 83px !important;
+}
+
+.ms-TooltipHost.root-133 {
+  font-weight: bold !important;
+}
+
+.root-274 {
+  z-index: 0 !important;
+}

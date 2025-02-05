@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "kid-detail-list-client-side-solution",
+    "id": "86acc53d-2f8d-48a9-8aaf-7fad14560bcb",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.18.2"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "KidDetailList description"
+      },
+      "longDescription": {
+        "default": "KidDetailList description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "kid-detail-list Feature",
+        "description": "The feature that activates elements of the kid-detail-list solution.",
+        "id": "75ba53ed-0cd2-4383-8318-a8ac16a49ded",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/kid-detail-list.sppkg"
+  }
+}

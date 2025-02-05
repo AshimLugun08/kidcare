@@ -1,0 +1,28 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "kid-detail-list-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/kidDetailList/KidDetailListWebPart.js",
+          "manifest": "./src/webparts/kidDetailList/KidDetailListWebPart.manifest.json"
+        }
+      ]
+    },
+    "todays-appointment-list-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/todaysAppointmentList/TodaysAppointmentListWebPart.js",
+          "manifest": "./src/webparts/todaysAppointmentList/TodaysAppointmentListWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "KidDetailListWebPartStrings": "lib/webparts/kidDetailList/loc/{locale}.js",
+    "ControlStrings": "node_modules/@pnp/spfx-controls-react/lib/loc/{locale}.js",
+    "TodaysAppointmentListWebPartStrings": "lib/webparts/todaysAppointmentList/loc/{locale}.js"
+  }
+}
