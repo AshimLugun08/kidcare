@@ -35,7 +35,7 @@ import "@pnp/sp/attachments";
 
 const baseUrl =
   "https://healthpointsolutions.sharepoint.com/sites/KidCare_Staging";
-  // "https://healthpointsolutions.sharepoint.com/sites/KidsCare";
+// "https://healthpointsolutions.sharepoint.com/sites/KidsCare";
 
 const StripedDataGrid = styled(DataGrid)(({ theme }) => ({
   [`& .${gridClasses.row}.even`]: {
@@ -509,7 +509,7 @@ export default function QuickFilteringGrid() {
   };
 
   return (
-    <div style={{width: "100%", maxWidth:"90%", marginLeft: "auto"}}>
+    <div style={{ width: "100%", maxWidth: "90%", marginLeft: "auto" }}>
       <div>
         <div>
           {UploadModal && (

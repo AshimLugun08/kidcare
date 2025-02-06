@@ -275,7 +275,7 @@ export default function ActionButton(props: any) {
       const url = `${baseAPI()}/markappointment?Appointment_Id=${Appointmentid}&Status=0&Reason=${selectedReason}&Bed_number=${bedNo}`;
       const response = await axios.post(url);
       console.log(response.data);
-      if(response.data.status === 1){
+      if (response.data.status === 1) {
         window.alert("Booking Confirmed !");
       } else {
         window.alert("Error in Booking Appointment!");
@@ -424,8 +424,9 @@ export default function ActionButton(props: any) {
             <Dropdown
               id="reasonDropdown"
               options={
-                props.appointment_Type == "Offline" ?
-                reasons : reasons.filter( reason => reason.key != "In-Patient")
+                props.appointment_Type == "Offline"
+                  ? reasons
+                  : reasons.filter((reason) => reason.key != "In-Patient")
               }
               selectedKey={selectedReason}
               onChange={handleReasonChange}
@@ -434,23 +435,18 @@ export default function ActionButton(props: any) {
           </div>
           <br />
 
-          {
-            selectedReason === "In-Patient" &&
+          {selectedReason === "In-Patient" && (
             <div>
-          <label htmlFor="bedNo">Enter Bed No:</label>
-          <TextField
+              <label htmlFor="bedNo">Enter Bed No:</label>
+              <TextField
                 id="bedNo"
                 value={bedNo}
                 onChange={(e, newValue) => setBedNo(newValue || "")}
-                errorMessage={
-                  bedNo == ""
-                  ? "Enter a valid Bed Number!"
-                  : ""
-                }
+                errorMessage={bedNo == "" ? "Enter a valid Bed Number!" : ""}
                 style={{ width: "200px" }}
-                />
-          </div>
-              }
+              />
+            </div>
+          )}
 
           <div
             style={{
@@ -467,10 +463,10 @@ export default function ActionButton(props: any) {
             {!Loader ? (
               <div>
                 <PrimaryButton
-                  onClick={() => 
-                    (selectedReason === "In-Patient" && bedNo == "") ? 
-                    window.alert("Enter a valid Bed Number to Confirm!") :
-                    MarksAppointmentBooked(Appointmentid)
+                  onClick={() =>
+                    selectedReason === "In-Patient" && bedNo == ""
+                      ? window.alert("Enter a valid Bed Number to Confirm!")
+                      : MarksAppointmentBooked(Appointmentid)
                   }
                 >
                   Confirm
